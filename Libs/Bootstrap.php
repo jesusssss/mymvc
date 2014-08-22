@@ -14,7 +14,7 @@ class Bootstrap {
 
             $url = explode('/', $url);
         } else {
-            $url = array("index");
+            $url = array("Index");
         }
 
         $urlUpper = ucfirst($url[0]);

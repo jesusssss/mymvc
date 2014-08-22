@@ -1,0 +1,154 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 120%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.top {
+    width: 100%;
+    padding: 15px 0px;
+    background: #ccc;
+    color: #333;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #333;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #999;
+}
+
+nav ul:after {
+    display: block;
+    content: " ";
+    visibility: hidden;
+    font-size: 0;
+    clear: both;
+}
+
+@media screen and (max-width: 748px) {
+    nav ul {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    #logo {
+        text-align: center;
+    }
+
+}
+
+.content {
+    color: #000;
+}
+
+.tracker {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 20px;
+}
+
+.tracker input[type='text'] {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    float:left;
+}
+
+.tracker #addToProject {
+    float: left;
+    margin-left: 20px;
+}
+
+.tracker #timer {
+    text-align: center;
+}
+
+.tracker input[type='submit'] {
+    float: right;
+    padding: 20px 90px;
+    color: #fff;
+    cursor: pointer;
+    background: green;
+    text-align: center;
+    border: none;
+}
+
+.tracker input[type='submit']:hover {
+    background: lightgreen;
+}
+
+.countDays .position:nth-child(1), .countDays .position:nth-child(2), .countDiv {
+    display: none;
+}
+
+.position {
+    overflow: inherit;
+    width: 10px;
+}
+
+.digit {
+    font-size: 19px;
+    width: auto;
+    letter-spacing: normal;
+    border-radius: 0;
+    color: #333;
+    background: transparent;
+    background-color: transparent;
+}
+
+.digit.static {
+    background-image: none;
+    box-shadow: none;
+}
+
+.countdownHolder {
+    width: auto;
+}
+
+@media screen and (max-width: 748px) {
+    .tracker input[type='text'] {
+        width: 100%;
+    }
+
+    .tracker #addToProject {
+        float: none;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tracker #timer {
+        float: none;
+        font-size: 50px;
+        text-align: center;
+    }
+}

@@ -16,7 +16,7 @@ class BaseController {
      * Constructing the XML / XSL / Processor
      */
 
-    public function __construct() {
+        public function __construct() {
         //Write default config to global variable data
         $this->xmlData = self::xmlBuildData();
 
@@ -113,7 +113,7 @@ class BaseController {
             echo $this->doc->asXML();
         } else {
             //Loads the main.xsl to XSL DomDocument
-            $this->xsl->load(VIEWS."main.xsl");
+            $this->xsl->load(VIEWS."/xsl/main.xsl");
 
             //Puts the two together
             $this->proc->importStylesheet($this->xsl);

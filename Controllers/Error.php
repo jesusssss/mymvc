@@ -4,9 +4,11 @@ namespace Controllers;
 
 class Error extends \Libs\BaseController {
 
+   private $plugin = "Error";
+
     public function __construct() {
         parent::__construct();
-        $this->outputXml("Error", array("error" => array("error" => "true", "timestamp" => time()), "test" => "1", "test2" => "2"));
+        $this->outputXml($this->plugin, array("error" => array("error" => "true", "timestamp" => time()), "test" => "1", "test2" => "2"));
     }
 
 }

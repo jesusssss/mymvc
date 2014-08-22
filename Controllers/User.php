@@ -27,4 +27,9 @@ class User extends \Libs\BaseController {
         }
     }
 
+    public function createUser() {
+        $username = $this->pget("createUser-username");
+        $password = $this->pget("createUser-password");
+    }
+
 }

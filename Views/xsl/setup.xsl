@@ -13,5 +13,10 @@
         </xsl:choose>
     </xsl:variable>
 
+    <!-- Variable shortcuts -->
+    <xsl:variable name="css" select="'/Views/css/'"/>
+    <xsl:variable name="img" select="'/Views/img/'"/>
+    <xsl:variable name="js" select="'/Views/js/'"/>
+
 
 </xsl:stylesheet>
