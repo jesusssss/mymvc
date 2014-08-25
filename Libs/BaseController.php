@@ -16,15 +16,17 @@ class BaseController {
      * Constructing the XML / XSL / Processor
      */
 
-        public function __construct() {
+    public function __construct() {
+
         //Write default config to global variable data
         $this->xmlData = self::xmlBuildData();
 
         //Creating empty XML Dom document
-        $this->doc = new \SimpleXMLElement($this->xmlData);
+        $this->doc = new \SimpleXMLElement($this->xmlBuildData());
         //$this->doc->formatOutput = true;
 
-
+        //Write default config to global variable data
+        $this->xmlData = self::xmlBuildData();
 
         //Creating the XSL view DOMDocument
         $this->xsl = new \DOMDocument();
